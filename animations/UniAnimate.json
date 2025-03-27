@@ -1,0 +1,221 @@
+{
+    "last_node_id": 5,
+    "last_link_id": 0,
+    "nodes": [
+        {
+            "id": 1,
+            "type": "LoadImage",
+            "pos": [
+                341.6640625,
+                132.44140625
+            ],
+            "size": [
+                315,
+                314
+            ],
+            "flags": {},
+            "order": 0,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": null,
+                    "localized_name": "IMAGE"
+                },
+                {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": null,
+                    "localized_name": "MASK"
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "LoadImage"
+            },
+            "widgets_values": [
+                "gen_sketch_001.png",
+                "image"
+            ]
+        },
+        {
+            "id": 3,
+            "type": "PreviewImage",
+            "pos": [
+                753.8798217773438,
+                357.84716796875
+            ],
+            "size": [
+                210,
+                26
+            ],
+            "flags": {},
+            "order": 1,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "images",
+                    "type": "IMAGE",
+                    "link": null,
+                    "localized_name": "images"
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "Node name for S&R": "PreviewImage"
+            },
+            "widgets_values": []
+        },
+        {
+            "id": 2,
+            "type": "Gen_align_pose",
+            "pos": [
+                733.2349243164062,
+                468.3655700683594
+            ],
+            "size": [
+                466.1999816894531,
+                46
+            ],
+            "flags": {},
+            "order": 2,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "reference_image",
+                    "type": "IMAGE",
+                    "link": null,
+                    "localized_name": "reference_image"
+                },
+                {
+                    "name": "video",
+                    "type": "IMAGE",
+                    "link": null,
+                    "localized_name": "video"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "ref_pose",
+                    "type": "IMAGE",
+                    "links": null,
+                    "localized_name": "ref_pose"
+                },
+                {
+                    "name": "pose_seq",
+                    "type": "IMAGE",
+                    "links": null,
+                    "localized_name": "pose_seq"
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "Gen_align_pose"
+            },
+            "widgets_values": []
+        },
+        {
+            "id": 4,
+            "type": "PreviewImage",
+            "pos": [
+                759.1505126953125,
+                613.839111328125
+            ],
+            "size": [
+                210,
+                26
+            ],
+            "flags": {},
+            "order": 3,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "images",
+                    "type": "IMAGE",
+                    "link": null,
+                    "localized_name": "images"
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "Node name for S&R": "PreviewImage"
+            },
+            "widgets_values": []
+        },
+        {
+            "id": 5,
+            "type": "UniAnimateImage",
+            "pos": [
+                1270.5697021484375,
+                360.41827392578125
+            ],
+            "size": [
+                365.4000244140625,
+                242
+            ],
+            "flags": {},
+            "order": 4,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "reference_image",
+                    "type": "IMAGE",
+                    "link": null,
+                    "localized_name": "reference_image"
+                },
+                {
+                    "name": "ref_pose",
+                    "type": "IMAGE",
+                    "link": null,
+                    "localized_name": "ref_pose"
+                },
+                {
+                    "name": "pose_sequence",
+                    "type": "IMAGE",
+                    "link": null,
+                    "localized_name": "pose_sequence"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "video",
+                    "type": "IMAGE",
+                    "links": null,
+                    "localized_name": "video",
+                    "slot_index": 0
+                },
+                {
+                    "name": "empty_mask",
+                    "type": "MASK",
+                    "links": null,
+                    "localized_name": "empty_mask"
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "UniAnimateImage"
+            },
+            "widgets_values": [
+                11,
+                "randomize",
+                30,
+                false,
+                1,
+                32,
+                512
+            ]
+        }
+    ],
+    "links": [],
+    "groups": [],
+    "config": {},
+    "extra": {
+        "ds": {
+            "scale": 0.9090909090909091,
+            "offset": [
+                -610.6726336472002,
+                -119.32467341451319
+            ]
+        }
+    },
+    "version": 0.4
+}
