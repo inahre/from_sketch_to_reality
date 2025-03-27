@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="from_sketch_to_reality/assets/header_image.png" alt="From Sketch to Reality" width="800"/>
+  <img src="assets/header_image.png" alt="From Sketch to Reality" width="800"/>
 </p>
 
-# From Sketch to Reality: A Small-Data Approach to Generative Garment Design
+# From Sketch to Reality: A Collaborative Approach to Design and Generative AI in Fashion
 
 This repository documents a practice-based research project exploring the integration of generative AI into fashion design. The project fine-tunes Stable Diffusion 2 and ControlNet using a small, ethically sourced dataset composed of the fashion designer’s original sketches and the researcher's photography. The resulting workflow enables the generation of personalised fashion sketches and photorealistic visualisations that preserve the designer’s creative style while supporting sustainable, low-waste prototyping.
 
